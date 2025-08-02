@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "moduleResolution": "node",
+    // "outDir": "dist", // Not needed with noEmit: true
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true
+  },
+  // ✅ Correctly include all .ts files in the project root and subdirectories
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
+}
