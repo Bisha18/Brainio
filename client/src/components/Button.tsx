@@ -20,12 +20,13 @@ const constant={
   lg:"px-6 py-2 text-lg"
 }
 
-const defaultVariant = "flex items-center rounded-lg"
+const defaultVariant = "flex items-center justify-center rounded-lg"
 
 
 export const Button=(props:ButtonProps)=>{
   return (
-    <button className={`${defaultVariant} ${constant[props.size]} ${variantClasses[props.variant]}`}>
+    <button className={`${defaultVariant} ${constant[props.size]} ${variantClasses[props.variant]}`}
+    onClick={props.onclick}>
      {props.startIcon?<div className="pr-2">{props.startIcon}</div>:""}
      {props.text}
      {props.endIcon?<div className="pl-2">{props.endIcon}</div>:""}
